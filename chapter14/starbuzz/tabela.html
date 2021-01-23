@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="starbuzz.css">
+  <link rel="stylesheet" href="styledform.css">
+  <title>Form/Table</title>
+</head>
+<body>
+
+  <p>
+    Este é apenas um parágrafo para teste do first-letter. <br>
+    segunda linha comparativa com a primeira
+  </p>
+
+  <form action="http://www.starbuzzcoffee.com/processorder.php" method="POST" id="beanform">
+    <h1>A máquina de Grãos do Starbuzz</h1>
+    <h2>Complete o formulário a seguir e clique em "Pedido"</h2>
+    <table>
+      <tr>
+        <th>Escolha seus grãos</th>
+        <td>
+          <select name="beans" id="">
+            <option value="House Blend">Mistura da casa</option>
+            <option value="Bolivia">Bolívia Supremo Cultivado na Sombra</option>
+            <option value="Guatemala">Guatemala Orgânico</option>
+            <option value="Kenya">Quênia</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Tipo:</th>
+        <td>
+          <input type="radio" name="beantype" value="whole" id="whole">
+            Grão inteiro <br>
+          <input type="radio" name="beantype" value="ground" id="ground" checked>
+            Moído <br>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Extras:</th>
+        <td>
+          <input type="checkbox" name="extras[]" value="giftwrap" id="giftwrap">
+            Embalagem para Presente <br>
+          <input type="checkbox" name="extras[]" value="catalog" id="catalog" checked>
+            Incluir catálogo no Pedido
+        </td>
+      </tr>
+      <tr>
+        <th>Enviar para:</th>
+        <td>
+          <table>
+            <tr>
+              <td>Nome:</td>
+              <td>
+                <input type="text" name="name" id="name" value="">
+              </td>
+            </tr>
+            <tr>
+              <td>Endereço</td>
+                <td>
+                  <input type="text" name="address" id="address" value="">
+                </td>
+            </tr>
+            <tr>
+              <td>Cidade:</td>
+               <td>
+                 <input type="text" name="city" id="city" value="">
+               </td>
+            </tr>
+            <tr>
+              <td>Estado:</td>
+               <td>
+                 <input type="text" name="state" id="state" value="">
+               </td>
+            </tr>
+             <tr>
+               <td>CEP:</td>
+               <td>
+                 <input type="text" name="zip" id="zip" value="">
+               </td>
+             </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <th>Comentários do Cliente:</th>
+        <td>
+          <textarea name="comments" id="comments" cols="48" rows="10"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <th>
+          <td>
+            <input type="submit" value="Order Now">
+          </td>
+        </th>
+      </tr>
+
+
+    </table>
+  </form>
+</body>
+</html>

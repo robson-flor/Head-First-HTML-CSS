@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+  </head>
+  <body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="GET">
+      <p>
+        Escolha seu grão:
+        <select name="beans" id="caixadegrao">
+          <option value="House Blend">House Blend</option>
+          <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+          <option value="Guatemala">Organic Guatemala</option>
+          <option value="Kenya">Kenya</option>
+        </select>
+      </p>
+      <p>
+        Type: <br>
+        <input type="radio" name="beantype" value="whole">
+        Whole bean 
+        <br>
+        <input type="radio" name="beantype" value="ground" checked>
+        Ground
+      </p>
+      <p>
+        Number of bags: <input type="number" name="bags" min="1" max="10">
+      </p>
+      <p>
+        Must arrive by date: <input type="date" name="date">
+      </p>
+      <p>
+        Extras: <br>
+        <input type="checkbox" name="extras[]" value="giftwrap">
+        Gift wrap
+        <br>
+        <input type="checkbox" name="extras[]" value="catalog" checked>
+        Include catalog with order
+      </p>
+     <p>
+       Ship to: <br>
+       Name:
+        <input type="text" name="name"><br>
+       Address:
+        <input type="text" name="address"><br>
+      City:
+        <input type="text" name="city"><br>
+      State:
+        <input type="text" name="state"><br>
+      Zip:
+        <input type="text" name="zip"><br>
+      Phone:
+        <input type="text" name="phone"><br>
+     </p>
+     <p>
+       Customer Comments: <br>
+        <textarea name="comments" id="" cols="48" rows="10"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Order Now">
+      </p>
+    </form>
+
+    <form action="http://www.escolhaseumini.com.br/escolha.php" method="POST"></form>
+      <p>
+        Suas informações: <br>
+        Nome: <input type="text" name="nome"><br>
+        Cep: <input type="text" name="cep"><br>
+      </p>
+      <p>
+        Qual o modelo que você quer? <br>
+        <select name="modelo" id="">
+          <option value="cooper"> Mini Cooper </option>
+          <option value="cooperS">Mini Cooper S</option>
+          <option value="conversivel">Mini Cooper conversivel</option>
+        </select>
+      </p>
+      <p>
+        Qual é a cor desejada? <br>
+        <input type="radio" name="cor" value="vermelhomalagueta">
+          Vermelho Malagueta <br>
+        <input type="radio" name="cor" value="hiperazul">
+          Hiper Azul <br>
+      </p>
+      <p>
+        Quais opcionais você deseja? <br>
+        <input type="checkbox" name="opcionaiscarro[]" value="faixas">
+          Faixas de Corrida <br>
+        <input type="checkbox" name="opcionaiscarro[]" value="bancosesportivos">
+          Bancos esportivos <br>
+      </p>
+
+      <p>
+        <input type="submit" value="Order Now">
+      </p>
+
+  </body>
+</html>
+
